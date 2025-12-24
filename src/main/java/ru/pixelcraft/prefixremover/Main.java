@@ -10,10 +10,8 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-        // Регистрация слушателей
         getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
 
-        // Проверка наличия LuckPerms
         if (getServer().getPluginManager().getPlugin("LuckPerms") == null) {
             getLogger().severe("LuckPerms не найден! Плагин не будет работать.");
             getServer().getPluginManager().disablePlugin(this);
