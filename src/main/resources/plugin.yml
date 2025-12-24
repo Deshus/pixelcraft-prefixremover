@@ -1,0 +1,11 @@
+name: PixelCraft-PrefixRemover
+version: 1.0
+main: ru.pixelcraft.prefixremover.Main
+api-version: 1.21
+depend: [LuckPerms]
+authors: [Deshus]
+description: отбирание префиксов
+permissions:
+  prefixremover.ignore:
+    description: Игнорирование удаления префикса
+    default: op
